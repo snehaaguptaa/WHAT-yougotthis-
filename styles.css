@@ -1,0 +1,13 @@
+#stop{
+    height:35px;
+    width: 100px ;
+    border-color: grey;
+    border-style: double;
+    background-color: antiquewhite ; 
+    background-blend-mode: darken;
+    }
+    body{
+        background-color: #212121 ;
+        color:aqua;
+    
+    }

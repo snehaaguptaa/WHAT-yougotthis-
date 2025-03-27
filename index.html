@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <h1> Project </h1>
+    <button id="stop"> Stop </button>
+    <p id="para"> hello</p>
+</body>
+<script> 
+    /*setTimeout(function(){     //SetTimeOut
+        console.log("sneha") ;
+    } , 2000) */
+    /*setInterval(function(){ 
+        parag = document.querySelector('#para')   //ClearTimeOut
+        parag.innerHTML += "hi " ;
+        console.log("hi")
+    }, 10000000) */
+    let change , change1 , change2 , change3
+    let intervalid = setInterval(function(){
+    cleartext = function(){
+        document.querySelector('#para').innerHTML  = "Sneha"
+    }
+    firstr = setTimeout(cleartext , 100)
+    const cleartext1 = function(){
+        document.querySelector('#para').innerHTML = "gupta"
+    } 
+    change = setTimeout(cleartext1,200) 
+    var cleartext2 = function(){
+        document.querySelector('#para').innerHTML = "heyllooo"
+    } 
+     change1 = setTimeout(cleartext2,300) 
+     cleartext3 = function(){
+        document.querySelector('#para').innerHTML = "hello"
+    } 
+    change2 = setTimeout(cleartext2,300)
+    change3 = setTimeout(cleartext3,400) 
+    } , 400 )
+    document.querySelector('#stop')
+    addEventListener('click' , function(){
+        clearTimeout(change)
+        clearTimeout(change1)
+        clearTimeout(change2)
+        clearTimeout(change3)
+        clearInterval(intervalid)
+        const ter = document.querySelector('#para').innerHTML
+        document.querySelector('#para').innerHTML = `congrats! You got ${ter}`
+        console.log("stopped")
+    })
+    
+
+
+</script>
+</html>
